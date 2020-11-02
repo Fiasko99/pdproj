@@ -1,0 +1,32 @@
+{
+  "name": "pdproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiasko99/pdproj.git"
+  },
+  "author": "Fiasko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fiasko99/pdproj/issues"
+  },
+  "homepage": "https://github.com/Fiasko99/pdproj#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "vue": "^2.6.12",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
