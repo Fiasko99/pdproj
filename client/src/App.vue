@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <Header />
+
+    <div class="container pt-4">
+      <transition name="myanime" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/structure/header";
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Header
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body, html {
+  padding: 0;
+  margin: 0;
+}
+.myanime-enter-active, .myanime-leave-active {
+  transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.myanime-enter, .myanime-leave-to {
+  opacity: 0;
 }
 </style>
